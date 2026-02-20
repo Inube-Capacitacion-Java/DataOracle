@@ -1,0 +1,138 @@
+<mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="none" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="node4" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CATEGORIA  /* Tabla que contiene la informacion del Categorias */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; NOMBRE  /* Campo del nombre de la categoria */: varchar2(100)&lt;br/&gt; DESCRIPCION  /* Campo de la descripcion de categoria */: varchar2(500)&lt;br/&gt; FECHA_CREACION  /* Campo de control que indica la Fecha de creacion en la BD */: date&lt;br/&gt; FECHA_MODIFICACION  /* Campo de control que indica la Accion de registro */: date&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_CATEGORIA  /* LLave primaria de la tabla Categorias */: number(*)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-750" y="318" width="439" height="160" as="geometry" />
+    </mxCell>
+    <mxCell id="node9" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CATEGORIA_BIT  /* Tabla de Bitacora que contiene las Categoria */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_CATEGORIA  /* LLave foranea ID_CATEGORIA que hace referencia a la tabla CAT... */: number(*)&lt;br/&gt; NOMBRE  /* Campo del nombre de la categoria */: varchar2(100)&lt;br/&gt; DESCRIPCION: varchar2(500)&lt;br/&gt; FECHA_CREACION  /* Campo de control que indica la Fecha de creacion en la BD */: date&lt;br/&gt; FECHA_MODIFICACION  /* Campo de control que indica la Accion de registro */: date&lt;br/&gt; ACCION  /* Campo de control que indica la Accion en el Registro */: varchar2(10)&lt;br/&gt; IP  /* Campo de control que indica IP de donde se solicito operacion... */: varchar2(30)&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_CATEGORIA_BIT  /* LLave primaria de la tabla CATEGORIA_BIT */: number(*)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-751" y="-18" width="441" height="232" as="geometry" />
+    </mxCell>
+    <mxCell id="node6" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CLIENTE  /* Tabla que contiene la informacion de los clientes */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; NOMBRE  /* Nombre del cliente */: varchar2(100)&lt;br/&gt; APELLIDOS  /* Apellidos del cliente */: varchar2(150)&lt;br/&gt; CORREO  /* Correo electronico del cliente */: varchar2(150)&lt;br/&gt; TELEFONO  /* Numero de telefono del cliente */: varchar2(15)&lt;br/&gt; FECHA_REGISTRO  /* Fecha en que el cliente se registro */: date&lt;br/&gt; FECHA_CREACION  /* Campo de control que indica la Fecha de creacion en la BD */: date&lt;br/&gt; FECHA_MODIFICACION  /* Campo de control que indica la Accion de registro */: date&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_CLIENTE  /* Llave primary key tabla del cliente */: number(*)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="549" y="-84" width="401" height="232" as="geometry" />
+    </mxCell>
+    <mxCell id="node8" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CLIENTE_BIT  /* Tabla que contiene la informacion de los cliente_bit */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_CLIENTE  /* Llave primary key tabla del cliente */: number(*)&lt;br/&gt; NOMBRE  /* Nombre del cliente */: varchar2(100)&lt;br/&gt; APELLIDOS  /* Apellidos del cliente */: varchar2(150)&lt;br/&gt; CORREO  /* Correo electronico del cliente */: varchar2(150)&lt;br/&gt; TELEFONO  /* Numero de telefono del cliente */: varchar2(15)&lt;br/&gt; FECHA_REGISTRO  /* Fecha en que el cliente se registro */: date&lt;br/&gt; FECHA_CREACION  /* Campo de control que indica la Fecha de creacion en la BD */: date&lt;br/&gt; FECHA_MODIFICACION  /* Campo de control que indica la Accion de registro */: date&lt;br/&gt; ACCION  /* Campo de control que indica la Accion en el Registro */: varchar2(10)&lt;br/&gt; IP  /* Campo de control que indica IP de donde se solicito operacion... */: varchar2(30)&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_CLIENTE_BIT: number(*)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="992" y="172" width="443" height="304" as="geometry" />
+    </mxCell>
+    <mxCell id="node5" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PRODUCTO  /* Tabla que contiene la informacion de productos */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; NOMBRE  /* Campo del nombre de producto */: varchar2(150)&lt;br/&gt; PRECIO  /* Precio Unitario del producto */: number(10,2)&lt;br/&gt; STOCK  /* Campo que indica cuanto prodcutos hay en existencia */: number(10)&lt;br/&gt; ID_CATEGORIA  /* LLave Foranea  que hace referencia a la tabla CATEGORIAS */: number(*)&lt;br/&gt; DESCRIPCION  /* Campo que describe el producto */: varchar2(500)&lt;br/&gt; ESTATUS  /* Campo de control el estado del producto (Activo,Inactivo) */: varchar2(20)&lt;br/&gt; FECHA_CREACION  /* Campo de control que indica la Fecha de creacion en la BD */: date&lt;br/&gt; FECHA_MODIFICACION  /* Campo de control que indica la Accion de registro */: date&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_PRODUCTO  /* LLave primaria de la tabla productos */: number(*)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-23" y="-42" width="435" height="256" as="geometry" />
+    </mxCell>
+    <mxCell id="node2" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PRODUCTO_BIT  /* Tabla que contiene la informacion de producto_bit */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_PRODUCTO  /* LLave primaria de la tabla productos */: number(*)&lt;br/&gt; NOMBRE  /* Campo del nombre de producto */: varchar2(150)&lt;br/&gt; PRECIO  /* Precio Unitario del producto */: number(10,2)&lt;br/&gt; STOCK  /* Campo que indica cuanto prodcutos hay en existencia */: number(10)&lt;br/&gt; ID_CATEGORIA  /* LLave Foranea  que hace referencia a la tabla CATEGORIAS */: number(*)&lt;br/&gt; DESCRIPCION  /* Campo que describe el producto */: varchar2(500)&lt;br/&gt; ESTATUS  /* Campo de control el estado del producto (Activo,Inactivo) */: varchar2(20)&lt;br/&gt; FECHA_CREACION  /* Campo de control que indica la Fecha de creacion en la BD */: date&lt;br/&gt; FECHA_MODIFICACION  /* Campo de control que indica la Accion de registro */: date&lt;br/&gt; ACCION  /* Campo de control que indica la Accion en el Registro */: varchar2(10)&lt;br/&gt; IP  /* Campo de control que indica IP de donde se solicito operacion... */: varchar2(30)&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_PRODUCTO_BIT  /* LLave primaria de la tabla ID_PRODUCTO_BIT */: number(*)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-797" y="743" width="462" height="328" as="geometry" />
+    </mxCell>
+    <mxCell id="node3" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VENTA  /* Tabla que registra las ventas realizadas */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_CLIENTE  /* Identificador del cliente que realiza la compra */: number(*)&lt;br/&gt; ID_PRODUCTO  /* Identificador del producto vendido */: number(*)&lt;br/&gt; CANTIDAD  /* Cantidad de productos vendidos */: number(10)&lt;br/&gt; FECHA_VENTA  /* Fecha en que se realizo la venta */: date&lt;br/&gt; USUARIO_REGISTRO  /* Usuario que registro la venta en el sistema */: varchar2(100)&lt;br/&gt; FECHA_CREACION: date&lt;br/&gt; FECHA_MODIFICAION: date&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_VENTA  /* Identificador unico de la venta */: number(*)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="82" y="1382" width="449" height="232" as="geometry" />
+    </mxCell>
+    <mxCell id="node0" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VENTA_BIT  /* Tabla que registra las ventas realizadas */&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_VENTA  /* Identificador unico de la venta */: number(*)&lt;br/&gt; ID_CLIENTE: number(*)&lt;br/&gt; ID_PRODUCTO: number(*)&lt;br/&gt; CANTIDAD: number(10)&lt;br/&gt; FECHA_VENTA: date&lt;br/&gt; USUARIO_REGISTRO: varchar2(100)&lt;br/&gt; FECHA_CREACION: date&lt;br/&gt; FECHA_MODIFICAION: date&lt;br/&gt; ACCION: varchar2(10)&lt;br/&gt; IP: varchar2(30)&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_VENTA_BIT: number(*)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="992" y="757" width="367" height="304" as="geometry" />
+    </mxCell>
+    <mxCell id="node1" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VW_PRODUCTOS_CATEGORIA&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_PRODUCTO: number(*)&lt;br/&gt; NOMBRE_PRODUCTO: varchar2(150)&lt;br/&gt; PRECIO: number(10,2)&lt;br/&gt; STOCK: number(10)&lt;br/&gt; ESTATUS: varchar2(20)&lt;br/&gt; ID_CATEGORIA: number(*)&lt;br/&gt; NOMBRE_CATEGORIA: varchar2(100)&lt;br/&gt; DESCRIPCION_CATEGORIA: varchar2(500)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="1504" y="582" width="290" height="231" as="geometry" />
+    </mxCell>
+    <mxCell id="node7" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VW_VENTAS_DETALLE&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; ID_VENTA: number(*)&lt;br/&gt; FECHA_VENTA: date&lt;br/&gt; ID_CLIENTE: number(*)&lt;br/&gt; CLIENTE: varchar2(251)&lt;br/&gt; ID_PRODUCTO: number(*)&lt;br/&gt; PRODUCTO: varchar2(150)&lt;br/&gt; CANTIDAD: number(10)&lt;br/&gt; PRECIO: number(10,2)&lt;br/&gt; TOTAL_VENTA: number(*)&lt;br/&gt; USUARIO_REGISTRO: varchar2(100)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="1525" y="153" width="249" height="279" as="geometry" />
+    </mxCell>
+    <mxCell id="edge6" edge="1" value="" parent="1" source="node9" target="node4" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label38" parent="edge6" vertex="1" connectable="0" value="ID_CATEGORIA" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-544" y="243" as="geometry" />
+    </mxCell>
+    <mxCell id="edge1" edge="1" value="" parent="1" source="node8" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1213" y="648" />
+          <mxPoint x="749" y="648" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label8" parent="edge1" vertex="1" connectable="0" value="ID_CLIENTE" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="675" y="396" as="geometry" />
+    </mxCell>
+    <mxCell id="edge4" edge="1" value="" parent="1" source="node5" target="node4" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.242;exitY=1.000;exitDx=0;exitDy=0;entryX=1.000;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="82" y="478" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label26" parent="edge4" vertex="1" connectable="0" value="ID_CATEGORIA" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-135" y="458" as="geometry" />
+    </mxCell>
+    <mxCell id="edge0" edge="1" value="" parent="1" source="node2" target="node4" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.250;exitY=0.000;exitDx=0;exitDy=0;entryX=0.157;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label2" parent="edge0" vertex="1" connectable="0" value="ID_CATEGORIA" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-772" y="600" as="geometry" />
+    </mxCell>
+    <mxCell id="edge3" edge="1" value="" parent="1" source="node2" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.750;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="-450" y="656" />
+          <mxPoint x="195" y="656" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label20" parent="edge3" vertex="1" connectable="0" value="ID_PRODUCTO" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="36" y="613" as="geometry" />
+    </mxCell>
+    <mxCell id="edge8" edge="1" value="" parent="1" source="node3" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.750;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="419" y="676" />
+          <mxPoint x="749" y="676" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label50" parent="edge8" vertex="1" connectable="0" value="ID_CLIENTE" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="547" y="656" as="geometry" />
+    </mxCell>
+    <mxCell id="edge7" edge="1" value="" parent="1" source="node3" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.250;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label44" parent="edge7" vertex="1" connectable="0" value="ID_PRODUCTO" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="103" y="565" as="geometry" />
+    </mxCell>
+    <mxCell id="edge2" edge="1" value="" parent="1" source="node0" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.833;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1298" y="1356" />
+          <mxPoint x="749" y="1356" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label14" parent="edge2" vertex="1" connectable="0" value="ID_CLIENTE" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="675" y="750" as="geometry" />
+    </mxCell>
+    <mxCell id="edge9" edge="1" value="" parent="1" source="node0" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.167;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1053" y="1096" />
+          <mxPoint x="269" y="1096" />
+          <mxPoint x="269" y="656" />
+          <mxPoint x="195" y="656" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label56" parent="edge9" vertex="1" connectable="0" value="ID_PRODUCTO" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="701" y="1086" as="geometry" />
+    </mxCell>
+    <mxCell id="edge5" edge="1" value="" parent="1" source="node0" target="node3" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#595959;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1175" y="1178" />
+          <mxPoint x="307" y="1178" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label32" parent="edge5" vertex="1" connectable="0" value="ID_VENTA" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="307" y="1263" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
