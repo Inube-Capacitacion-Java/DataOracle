@@ -1,0 +1,24 @@
+
+
+
+---PRUEBA DE LA FUNCION DE ESTATUS
+SELECT FN_GET_ESTATUS('Laptop Lenovo')
+FROM DUAL;
+---PRUEBA TOTAL DE LA FUNCION DE VENTA
+SELECT FN_CALCULAR_TOTAL_VENTA(14)
+FROM DUAL;
+/
+--Aqui es para activar la salidas del pl/sql
+DECLARE
+ V_MENSAJE VARCHAR2(50); --se crea una variable par la salida de respuesta
+BEGIN
+    --llamando al pl/sql
+ SP_REGISTRAR_VENTA(1,1,2,USER,V_MENSAJE);
+    ---para imprimir el Mensaje de la salida del pl/sql
+ DBMS_OUTPUT.PUT_LINE(V_MENSAJE);
+END;
+
+SELECT * FROM VW_PRODUCTOS_CATEGORIA;
+SELECT * FROM VW_VENTAS_DETALLE;
+SELECT * FROM VENTA
+WHERE ID_CLIENTE =1;
